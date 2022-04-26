@@ -1,0 +1,17 @@
+p{
+    font-family: 'Square Peg', cursive;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    background-color: yellowgreen;
+    font-weight: normal;
+    text-align: center;
+}
+#author{
+    font-family: 'Updock', cursive;
+    font-size: xx-large;
+    text-align: center;
+}
