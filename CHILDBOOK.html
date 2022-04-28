@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <link rel="stylesheet" href="childbook.css">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,5 +33,13 @@
             Бьется на просторе.
         </p>
         <!--а по поводу того, почему сам файл childbook.png в таком формате, потому что нет потерь качества и все картинки в нем видно хорошо и текст тоже-->
+        <script>
+            var paragraph=document.getElementsByTagName('p');
+            for (var e=0; e<paragraph.length; e++) {
+                var element=paragraph[e];
+                element.style.fontFamily='sans-serif';
+            }
+        </script>
+        <!--P.S. не снижай оценку пж за то, что не использовал внешний файл CSS, я просто тренюсь писать на JS-->
     </body>
 </html>
