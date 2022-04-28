@@ -6,7 +6,7 @@ var ageAfterFiveYears=parseInt(age)+5;
 var ageInDays=parseInt(age)*365;
 var gender=confirm("Ваш пол мужской?");
 var pension;
-if (age<=60) {
+if (age<60) {
     pension="Нет";
 } else{
     pension="Да";
