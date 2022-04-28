@@ -5,7 +5,7 @@ var age=prompt("Введите ваш возраст");
 var ageAfterFiveYears=parseInt(age)+5;
 var ageInDays=parseInt(age)*365;
 var gender=confirm("Ваш пол мужской?");
-var pension=(age<=60)?"Нет":"Да";
+var pension=(age<60)?"Нет":"Да";
 switch (gender) {
     case true:
         gender="Мужской";
