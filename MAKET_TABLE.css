@@ -1,0 +1,25 @@
+body{
+    font-family: sans-serif;
+}
+.header_footer{
+    text-align: center;
+    color: #0000ff;
+    font-size: x-large;
+    background-color: #87cefa;
+    padding: 10px;
+}
+#menu{
+    padding-left: 10px;
+    padding-right: 10px;
+    background: url('menu_football.png') repeat-y left top;
+}
+#main{
+    padding-left: 10px;
+    background: url('ball.png') repeat-y right top;
+}
+#football{
+    float: left;
+}
+p{
+    text-indent: 7px;
+}
