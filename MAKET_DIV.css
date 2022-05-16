@@ -19,6 +19,8 @@ body{
 }
 #football{
     float: left;
+    padding-right: 15px;
+    padding-bottom: 15px;
 }
 p{
     text-indent: 7px;

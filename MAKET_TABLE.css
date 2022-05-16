@@ -12,14 +12,18 @@ body{
     padding-left: 10px;
     padding-right: 10px;
     background: url('menu_football.png') repeat-y left top;
+    vertical-align: top;
 }
 #main{
-    padding-left: 10px;
     background: url('ball.png') repeat-y right top;
 }
 #football{
     float: left;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
 }
 p{
     text-indent: 7px;
+    margin-left: 5px;
 }
