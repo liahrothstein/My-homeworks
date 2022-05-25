@@ -2,16 +2,38 @@ p{
     font-family: 'Square Peg', cursive;
     font-size: xx-large;
     font-weight: bold;
-    text-align: center;
+    text-shadow: 1px 1px #808080;
 }
 h1{
     font-family: 'Roboto', sans-serif;
-    background-color: #9acd32;
-    font-weight: normal;
+    font-weight: bolder;
     text-align: center;
+    font-size: 2.5em;
+    margin-block-end: 0em;
+    text-shadow: 1px 1px #808080;
 }
 #author{
     font-family: 'Updock', cursive;
     font-size: xx-large;
     text-align: center;
+}
+.verse1{
+    margin-block-start: 0.5em;
+}
+.verse2{
+    margin-left: 16.7vw;
+}
+.verse3{
+    margin-left: 33.4vw;
+}
+.verse4{
+    text-align: right;
+    margin-right: 33.4vw;
+}
+.verse5{
+    text-align: right;
+    margin-right: 16.7vw;
+}
+.verse6{
+    text-align: right;
 }
