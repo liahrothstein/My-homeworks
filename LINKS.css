@@ -1,0 +1,178 @@
+div{
+    text-align: center;
+    font-size: 2rem;
+    margin: 40px;
+    height: 36.25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: #008000;
+}
+a:hover{
+    color: #ff0000;
+}
+
+/* divs and borders */
+
+div.divs div:not(div.divs div:last-of-type){
+    border-right: #ff0000 solid 5px;
+}
+div.divs div{
+    display: inline-block;
+    margin: 0 auto;
+    padding-right: 10px;
+}
+
+/* table and borders */
+
+div.table table tr td:not(div.table table tr td:last-of-type){
+    border-right: #ff0000 solid 5px;
+    border-collapse: collapse;
+}
+div.table table tr td{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+div.table table{
+    margin: 0 auto;
+}
+
+/* spans and borders */
+
+div.spans span{
+    border-right: #ff0000 solid 5px;
+    padding-right: 10px;
+}
+div.spans a{
+    padding-left: 10px;
+}
+
+/* background-color of spans */
+
+div.bgColor span{
+    display: inline-block;
+    background: #ff0000;
+    height: 100%;
+    width: 5px;
+}
+
+/* background-image of spans */
+
+div.bgImg span{
+    display: inline-block;
+    background: url('linksBorder.png');
+    height: 100%;
+    width: 5px;
+}
+
+/* only sticks */
+
+div.sticks strong{
+    color: #ff0000;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+/* ::after and spans */
+
+div.after span::after{
+    content: '';
+    display: inline-block;
+    background: #ff0000;
+    height: 100%;
+    width: 5px;
+}
+
+/* ::before and spans */
+
+div.before span::before{
+    content: '';
+    display: inline-block;
+    background: #ff0000;
+    height: 100%;
+    width: 5px;
+}
+
+/* :nth-child and spans */
+
+div.nthChild span:nth-child(2n){
+    display: inline-block;
+    background: #ff0000;
+    height: 100%;
+    width: 5px;
+}
+
+/* :nth-of-type and spans */
+
+div.nthOfType span:nth-of-type(2n), div.nthOfType span:nth-of-type(2n+1){
+    display: inline-block;
+    background: #ff0000;
+    height: 100%;
+    width: 5px;
+}
+
+/* :nth-last-child and spans */
+
+div.nthLastChild span:nth-last-child(2n){
+    display: inline-block;
+    background: #ff0000;
+    height: 100%;
+    width: 5px;
+}
+
+/* :nth-of-type and spans */
+
+div.nthLastOfType span:nth-last-of-type(2n+1), div.nthLastOfType span:nth-last-of-type(2n){
+    display: inline-block;
+    background: #ff0000;
+    height: 100%;
+    width: 5px;
+}
+
+/* :empty */
+
+div.empty span:empty{
+    display: inline-block;
+    background: #ff0000;
+    height: 100%;
+    width: 5px;
+}
+
+/* :first-of-type and :last-of-type */
+
+div.firstOfType span:first-of-type, div.lastOfType span:last-of-type,
+div.firstOfType strong:first-of-type, div.lastOfType strong:last-of-type{
+    display: inline-block;
+    background: #ff0000;
+    height: 100%;
+    width: 5px;
+}
+
+/* :only-of-type */
+
+div.onlyOfType span:only-of-type,
+div.onlyOfType strong:only-of-type,
+div.onlyOfType em:only-of-type,
+div.onlyOfType b:only-of-type{
+    display: inline-block;
+    background: #ff0000;
+    height: 100%;
+    width: 5px;
+}
+
+/* result:
+    inline-block                borders
+    table                       background-color and image box-models
+    inline                      images
+                                sticks
+                                span::after
+                                span::before
+                                span:nth-child()
+                                span:nth-of-type()
+                                span:nth-last-child()
+                                span:nth-last-of-type()
+                                span:empty
+                                span:first-of-type
+                                span:last-of-type
+                                span:only-of-type
+*/
