@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>*** unnamed text ***</title>
+        <style>
+    
+            table.CHESS
+            {
+              border-collapse: collapse;
+            }
+    
+            table.CHESS td
+            {
+              width: 50px;
+              height: 50px;
+              border: solid gray 1px;
+            }
+            table.CHESS tr:first-child td:nth-of-type(even),
+            table.CHESS tr:first-child + tr td:nth-of-type(odd),
+            table.CHESS tr:first-child + tr + tr td:nth-of-type(even),
+            table.CHESS tr:first-child + tr + tr + tr td:nth-of-type(odd),
+            table.CHESS tr:first-child + tr + tr + tr + tr td:nth-of-type(even),
+            table.CHESS tr:first-child + tr + tr + tr + tr + tr td:nth-of-type(odd),
+            table.CHESS tr:first-child + tr + tr + tr + tr + tr + tr td:nth-of-type(even),
+            table.CHESS tr:first-child + tr + tr + tr + tr + tr + tr + tr td:nth-of-type(odd),
+            table.CHESS tr:first-child + tr + tr + tr + tr + tr + tr + tr + tr td:nth-of-type(even),
+            table.CHESS tr:last-child td:nth-of-type(odd){
+              background: black;
+            }
+            table.CHESS{
+              position: absolute;
+              left: 35vw;
+              top: 23vh;
+            }
+            table.CHESS tr:first-child::after{
+              content: url('borderChess.png');
+              z-index: -1;
+              position: absolute;
+              left: -17px;
+              top: -16px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <table class='CHESS'>
+            <tr>
+              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+        </table>
+
+    </body>
+</html>
