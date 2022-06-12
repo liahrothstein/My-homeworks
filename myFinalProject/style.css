@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+}
+.gridContainer{
+    background-color: #8b3a3a;
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+.logo{
+    background: url('logo.png') no-repeat center;
+    height: 528px;
+}
