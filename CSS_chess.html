@@ -2,9 +2,8 @@
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <title>*** unnamed text ***</title>
+        <title>Chess board</title>
         <style>
-    
             table.CHESS
             {
               border-collapse: collapse;
@@ -16,34 +15,67 @@
               height: 50px;
               border: solid gray 1px;
             }
-            table.CHESS tr:first-child td:nth-of-type(even),
-            table.CHESS tr:first-child + tr td:nth-of-type(odd),
-            table.CHESS tr:first-child + tr + tr td:nth-of-type(even),
-            table.CHESS tr:first-child + tr + tr + tr td:nth-of-type(odd),
-            table.CHESS tr:first-child + tr + tr + tr + tr td:nth-of-type(even),
-            table.CHESS tr:first-child + tr + tr + tr + tr + tr td:nth-of-type(odd),
-            table.CHESS tr:first-child + tr + tr + tr + tr + tr + tr td:nth-of-type(even),
-            table.CHESS tr:first-child + tr + tr + tr + tr + tr + tr + tr td:nth-of-type(odd),
-            table.CHESS tr:first-child + tr + tr + tr + tr + tr + tr + tr + tr td:nth-of-type(even),
-            table.CHESS tr:last-child td:nth-of-type(odd){
+            table tr:first-child td:nth-of-type(even),
+            table tr:first-child + tr td:nth-of-type(odd),
+            table tr:first-child + tr + tr td:nth-of-type(even),
+            table tr:first-child + tr + tr + tr td:nth-of-type(odd),
+            table tr:first-child + tr + tr + tr + tr td:nth-of-type(even),
+            table tr:first-child + tr + tr + tr + tr + tr td:nth-of-type(odd),
+            table tr:first-child + tr + tr + tr + tr + tr + tr td:nth-of-type(even),
+            table tr:first-child + tr + tr + tr + tr + tr + tr + tr td:nth-of-type(odd),
+            table tr:first-child + tr + tr + tr + tr + tr + tr + tr + tr td:nth-of-type(even),
+            table tr:last-child td:nth-of-type(odd){
               background: black;
             }
-            table.CHESS{
+            table{
               position: absolute;
               left: 35vw;
               top: 23vh;
             }
-            table.CHESS tr:first-child::after{
-              content: url('borderChess.png');
-              z-index: -1;
-              position: absolute;
-              left: -17px;
-              top: -16px;
+            /* top border */
+            table.CHESS tr:first-child td{
+              background-color: #00a651;
+              height: 16px;
+            }
+            /* bottom border */
+            table.CHESS tr:last-child td{
+              background-color: #00a651;
+              height: 16px;
+            }
+            /* left border */
+            table.CHESS tr:first-child + tr > td:first-child,
+            table.CHESS tr:first-child + tr + tr > td:first-child,
+            table.CHESS tr:first-child + tr + tr + tr > td:first-child,
+            table.CHESS tr:first-child + tr + tr + tr + tr > td:first-child,
+            table.CHESS tr:first-child + tr + tr + tr + tr + tr > td:first-child,
+            table.CHESS tr:first-child + tr + tr + tr + tr + tr + tr > td:first-child,
+            table.CHESS tr:first-child + tr + tr + tr + tr + tr + tr + tr > td:first-child,
+            table.CHESS tr:first-child + tr + tr + tr + tr + tr + tr + tr + tr > td:first-child{
+              background-color: #00a651;
+              width: 16px;
+            }
+            /* right border */
+            table.CHESS tr:first-child + tr > td:last-child,
+            table.CHESS tr:first-child + tr + tr > td:last-child,
+            table.CHESS tr:first-child + tr + tr + tr > td:last-child,
+            table.CHESS tr:first-child + tr + tr + tr + tr > td:last-child,
+            table.CHESS tr:first-child + tr + tr + tr + tr + tr > td:last-child,
+            table.CHESS tr:first-child + tr + tr + tr + tr + tr + tr > td:last-child,
+            table.CHESS tr:first-child + tr + tr + tr + tr + tr + tr + tr > td:last-child,
+            table.CHESS tr:first-child + tr + tr + tr + tr + tr + tr + tr + tr > td:last-child{
+              background-color: #00a651;
+              width: 16px;
+            }
+            /* corners */
+            table.CHESS tr:first-child td:first-child,
+            table.CHESS tr:last-child td:first-child,
+            table.CHESS tr:first-child td:last-child,
+            table.CHESS tr:last-child td:last-child{
+              width: 16px;
             }
         </style>
     </head>
     <body>
-
         <table class='CHESS'>
             <tr>
               <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
@@ -76,6 +108,5 @@
               <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
             </tr>
         </table>
-
     </body>
 </html>
