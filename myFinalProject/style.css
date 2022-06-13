@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: #eaeaea;
 }
 .gridContainer{
     background-color: #8b3a3a;
@@ -9,5 +10,29 @@ body{
 }
 .logo{
     background: url('logo.png') no-repeat center;
-    height: 528px;
+    height: 530px;
+}
+.topMenu{
+    height: 120px;
+    background: white url('topMenuLogo.png') no-repeat 10vw 45%;
+}
+.topMenu a{
+    font-family: 'Abel', sans-serif;
+    text-decoration: none;
+}
+a{
+    color: #2a1f1f;
+    font-size: 25px;
+    padding: 12px;
+}
+.menu{
+    display: inline-block;
+    position: absolute;
+    left: 34vw;
+    top: 574px;
+}
+form.search{
+    position: fixed;
+    right: 19vw;
+    top: 574px;
 }
