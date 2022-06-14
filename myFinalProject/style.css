@@ -3,39 +3,95 @@ body{
     background-color: #eaeaea;
 }
 .gridContainer{
+    display: grid;
     background-color: #8b3a3a;
     width: 80vw;
     height: 100vh;
     margin: 0 auto;
+    grid-row-gap: 86px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(auto, 123px);
 }
 .logo{
-    background: url('logo.png') no-repeat center;
+    background: url('logo.png') no-repeat 53.29% 64.17% #8b3a3a;
     height: 530px;
-}
-.topMenu{
-    height: 120px;
-    background: white url('topMenuLogo.png') no-repeat 10vw 45%;
+    width: 80vw;
+    margin: 0 auto;
 }
 
 /* top menu */
 
+.topMenu{
+    height: 123px;
+    background: white url('topMenuLogo.png') no-repeat 10vw 45%;
+}
 .topMenu a{
-    font-family: 'Abel', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     text-decoration: none;
+    font-weight: bold;
 }
 a{
     color: #2a1f1f;
-    font-size: 25px;
+    font-size: 20px;
     padding: 12px;
 }
 .menu{
     display: inline-block;
     position: absolute;
-    left: 34vw;
-    top: 574px;
+    left: 30vw;
+    top: 581px;
 }
 form.search{
-    position: fixed;
+    position: absolute;
     right: 19vw;
     top: 574px;
+}
+form.search input[type=submit]:hover{
+    cursor: pointer;
+}
+
+/* hero page */
+
+div.heroPage{
+    height: 449px;
+    background: white url('heroPageLogo.png') no-repeat 12.24% 16.28%;
+}
+div.heroPage div.bananasFosterIceCream img{
+    height: 420px;
+    position: absolute;
+    left: 41.4vw;
+    top: 752px;
+    border-radius: 20px;
+}
+div.heroPage div.recipeName{
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #911026;
+    font-weight: bold;
+    position: absolute;
+    left: 17vw;
+    top: 927px;
+}
+div.heroPage div.recipeDescription{
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 338px;
+    position: absolute;
+    top: 981px;
+    left: 17vw;
+    font-weight: bold;
+}
+div.heroPage div.getItRecipeButton button{
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    top: 1096px;
+    left: 17vw;
+    background: white;
+    border: 1px solid black;
+    width: 110px;
+    height: 28px;
+    font-weight: bold;
+}
+div.heroPage div.getItRecipeButton button:hover{
+    cursor: pointer;
 }
