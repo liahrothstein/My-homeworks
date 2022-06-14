@@ -16,6 +16,9 @@ body{
     height: 120px;
     background: white url('topMenuLogo.png') no-repeat 10vw 45%;
 }
+
+/* top menu */
+
 .topMenu a{
     font-family: 'Abel', sans-serif;
     text-decoration: none;
