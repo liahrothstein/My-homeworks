@@ -2,96 +2,124 @@ body{
     margin: 0;
     background-color: #eaeaea;
 }
-.gridContainer{
-    display: grid;
+div.gridContainer{
     background-color: #8b3a3a;
-    width: 80vw;
-    height: 100vh;
+    width: 77.85vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 123px 438px 374px 439px;
+    row-gap: 85px;
     margin: 0 auto;
-    grid-row-gap: 86px;
-    grid-template-columns: 1fr;
-    grid-auto-rows: minmax(auto, 123px);
+    position: relative;
 }
-.logo{
-    background: url('logo.png') no-repeat 53.29% 64.17% #8b3a3a;
+div.logo{
+    background: url(./logos/logo.png) no-repeat 53.29% 64.17% #8b3a3a;
     height: 530px;
-    width: 80vw;
+    width: 77.85vw;
     margin: 0 auto;
 }
 
 /* top menu */
 
-.topMenu{
-    height: 123px;
-    background: white url('topMenuLogo.png') no-repeat 10vw 45%;
+div.gridContainer div.topMenu{
+    background: #f8f8f8 url(./logos/topMenuLogo.png) no-repeat 10vw 45%;
 }
-.topMenu a{
+div.gridContainer div.topMenu div.menu a{
     font-family: 'Josefin Sans', sans-serif;
     text-decoration: none;
     font-weight: bold;
-}
-a{
+    text-transform: uppercase;
     color: #2a1f1f;
     font-size: 20px;
-    padding: 12px;
 }
-.menu{
-    display: inline-block;
-    position: absolute;
-    left: 30vw;
-    top: 581px;
+div.gridContainer div.topMenu div.menu{
+    display: flex;
+    height: 100%;
+    margin: 0 6.04vw 0 19.1vw;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-form.search{
-    position: absolute;
-    right: 19vw;
-    top: 574px;
+div.gridContainer div.topMenu div.menu form.search{
+    position: relative;
 }
-form.search input[type=submit]:hover{
+div.gridContainer div.topMenu div.menu form.search input[type=submit]:hover{
     cursor: pointer;
+}
+div.gridContainer div.topMenu div.menu form.search input[type=submit]{
+    border: none;
+    background-color: #ffffff;
+    position: absolute;
+    padding: 0;
+    top: 5px;
+    right: 0.1vw;
+}
+div.gridContainer div.topMenu div.menu form.search input[type=text]{
+    height: 26px;
+    width: 160px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    border: #c2c2c2 solid 1px;
 }
 
 /* hero page */
 
-div.heroPage{
-    height: 449px;
-    background: white url('heroPageLogo.png') no-repeat 12.24% 16.28%;
+div.gridContainer div.heroPage{
+    background: #f9f9f9 url(./logos/heroPageLogo.png) no-repeat 6.6vw 16.28%;
+    display: flex;
 }
-div.heroPage div.bananasFosterIceCream img{
-    height: 420px;
-    position: absolute;
-    left: 41.4vw;
-    top: 752px;
-    border-radius: 20px;
+div.gridContainer div.heroPage div.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-left: 7vw;
 }
-div.heroPage div.recipeName{
+div.gridContainer div.heroPage div.container div.recipeName{
     font-family: 'Playfair Display', serif;
     font-size: 24px;
     color: #911026;
     font-weight: bold;
-    position: absolute;
-    left: 17vw;
-    top: 927px;
+    margin-top: 178px;
 }
-div.heroPage div.recipeDescription{
+div.gridContainer div.heroPage div.container div.recipeDescription{
     font-size: 18px;
     font-family: 'Josefin Sans', sans-serif;
     width: 338px;
-    position: absolute;
-    top: 981px;
-    left: 17vw;
     font-weight: bold;
+    margin-top: 15px;
 }
-div.heroPage div.getItRecipeButton button{
+div.gridContainer div.heroPage div.container div.getItRecipeButton button{
     font-family: 'Josefin Sans', sans-serif;
-    position: absolute;
-    top: 1096px;
-    left: 17vw;
     background: white;
-    border: 1px solid black;
+    border: 1px solid #c2c2c2;
     width: 110px;
     height: 28px;
     font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 15px;
 }
-div.heroPage div.getItRecipeButton button:hover{
+div.gridContainer div.heroPage div.getItRecipeButton button:hover{
     cursor: pointer;
+}
+div.gridContainer div.heroPage div.slider{
+    height: 438px;
+    position: absolute;
+    right: 0;
+}
+
+/* recipes */
+
+div.gridContainer div.recipes{
+    background-color: white;
+}
+
+/* recipe */
+
+div.gridContainer div.recipe{
+    background-color: white;
 }
