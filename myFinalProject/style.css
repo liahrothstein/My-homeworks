@@ -2,7 +2,7 @@ body{
     margin: 0;
     background-color: #eaeaea;
 }
-div.gridContainer{
+div.gridContainer1{
     background-color: #8b3a3a;
     width: 77.85vw;
     height: 100%;
@@ -22,10 +22,10 @@ div.logo{
 
 /* top menu */
 
-div.gridContainer div.topMenu{
+div.gridContainer1 div.topMenu{
     background: #f8f8f8 url(./logos/topMenuLogo.png) no-repeat 10vw 45%;
 }
-div.gridContainer div.topMenu div.menu a{
+div.gridContainer1 div.topMenu div.menu a{
     font-family: 'Josefin Sans', sans-serif;
     text-decoration: none;
     font-weight: bold;
@@ -33,7 +33,7 @@ div.gridContainer div.topMenu div.menu a{
     color: #2a1f1f;
     font-size: 20px;
 }
-div.gridContainer div.topMenu div.menu{
+div.gridContainer1 div.topMenu div.menu{
     display: flex;
     height: 100%;
     margin: 0 6.04vw 0 19.1vw;
@@ -41,13 +41,13 @@ div.gridContainer div.topMenu div.menu{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-div.gridContainer div.topMenu div.menu form.search{
+div.gridContainer1 div.topMenu div.menu form.search{
     position: relative;
 }
-div.gridContainer div.topMenu div.menu form.search input[type=submit]:hover{
+div.gridContainer1 div.topMenu div.menu form.search input[type=submit]:hover{
     cursor: pointer;
 }
-div.gridContainer div.topMenu div.menu form.search input[type=submit]{
+div.gridContainer1 div.topMenu div.menu form.search input[type=submit]{
     border: none;
     background-color: #ffffff;
     position: absolute;
@@ -55,7 +55,7 @@ div.gridContainer div.topMenu div.menu form.search input[type=submit]{
     top: 5px;
     right: 0.1vw;
 }
-div.gridContainer div.topMenu div.menu form.search input[type=text]{
+div.gridContainer1 div.topMenu div.menu form.search input[type=text]{
     height: 26px;
     width: 160px;
     font-family: 'Josefin Sans', sans-serif;
@@ -68,32 +68,32 @@ div.gridContainer div.topMenu div.menu form.search input[type=text]{
 
 /* hero page */
 
-div.gridContainer div.heroPage{
+div.gridContainer1 div.heroPage{
     background: #f9f9f9 url(./logos/heroPageLogo.png) no-repeat 6.6vw 16.28%;
     display: flex;
 }
-div.gridContainer div.heroPage div.container{
+div.gridContainer1 div.heroPage div.container{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 100%;
     margin-left: 7vw;
 }
-div.gridContainer div.heroPage div.container div.recipeName{
+div.gridContainer1 div.heroPage div.container div.recipeName{
     font-family: 'Playfair Display', serif;
     font-size: 24px;
     color: #911026;
     font-weight: bold;
     margin-top: 178px;
 }
-div.gridContainer div.heroPage div.container div.recipeDescription{
+div.gridContainer1 div.heroPage div.container div.recipeDescription{
     font-size: 18px;
     font-family: 'Josefin Sans', sans-serif;
     width: 338px;
     font-weight: bold;
     margin-top: 15px;
 }
-div.gridContainer div.heroPage div.container div.getItRecipeButton button{
+div.gridContainer1 div.heroPage div.container div.getItRecipeButton button{
     font-family: 'Josefin Sans', sans-serif;
     background: white;
     border: 1px solid #c2c2c2;
@@ -103,10 +103,10 @@ div.gridContainer div.heroPage div.container div.getItRecipeButton button{
     text-transform: uppercase;
     margin-top: 15px;
 }
-div.gridContainer div.heroPage div.getItRecipeButton button:hover{
+div.gridContainer1 div.heroPage div.getItRecipeButton button:hover{
     cursor: pointer;
 }
-div.gridContainer div.heroPage div.slider{
+div.gridContainer1 div.heroPage div.slider{
     height: 438px;
     position: absolute;
     right: 0;
@@ -114,12 +114,126 @@ div.gridContainer div.heroPage div.slider{
 
 /* recipes */
 
-div.gridContainer div.recipes{
+div.gridContainer1 div.recipes{
     background-color: white;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+div.gridContainer1 div.recipes div.recipe1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+div.gridContainer1 div.recipes div.recipe1 div.more,
+div.gridContainer1 div.recipes div.recipe2 div.more,
+div.gridContainer1 div.recipes div.recipe3 div.more{
+    display: flex;
+    color: #555555;
+}
+div.gridContainer1 div.recipes div.recipe1 div.more div.numbers,
+div.gridContainer1 div.recipes div.recipe2 div.more div.numbers,
+div.gridContainer1 div.recipes div.recipe3 div.more div.numbers{
+    padding-left: 0.4vw;
+}
+div.gridContainer1 div.recipes div.recipe1 div.more div.time,
+div.gridContainer1 div.recipes div.recipe2 div.more div.time,
+div.gridContainer1 div.recipes div.recipe3 div.more div.time{
+    border-right: #6f6f6f 1px solid;
+    padding-right: 0.5vw;
+}
+div.gridContainer1 div.recipes div.recipe1 div.recipeName,
+div.gridContainer1 div.recipes div.recipe2 div.recipeName,
+div.gridContainer1 div.recipes div.recipe3 div.recipeName{
+    padding-top: 10px;
+}
+div.gridContainer1 div.recipes div.recipe1 div.image{
+    background: url(./recipes/recipe1.png) no-repeat;
+    width: 313px;
+    height: 208px;
+}
+div.gridContainer1 div.recipes div.recipe2 div.image{
+    background: url(./recipes/recipe2.png) no-repeat;
+    width: 313px;
+    height: 208px;
+}
+div.gridContainer1 div.recipes div.recipe3 div.image{
+    background: url(./recipes/recipe3.png) no-repeat;
+    width: 313px;
+    height: 208px;
 }
 
 /* recipe */
 
-div.gridContainer div.recipe{
+div.gridContainer1 div.recipe{
     background-color: white;
+}
+div.gridContainer1 div.recipe div.main{
+    display: flex;
+    justify-content: space-between;
+}
+div.gridContainer1 div.recipe div.main div.image{
+    width: 36.25vw;
+    height: 439px;
+    background: url(./recipe/image.png) no-repeat;
+}
+div.gridContainer1 div.recipe div.main div.text:not(div.gridContainer1 div.recipe div.main div.text div.header div.text){
+    margin: 30px 0;
+}
+div.gridContainer1 div.recipe div.main div.text div.header{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4.79vw;
+}
+div.gridContainer1 div.recipe div.main div.text div.header div.text{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #055555;
+}
+div.gridContainer1 div.recipe div.main div.text div.header div.others{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+div.gridContainer1 div.recipe div.main div.text div.header div.others div.more{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #555555;
+}
+div.gridContainer1 div.recipe div.main div.text div.header div.others button{
+    font-family: 'Josefin Sans', sans-serif;
+    background: white;
+    border: 1px solid #c2c2c2;
+    width: 110px;
+    height: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+div.gridContainer1 div.recipe div.main div.text div.header div.others button:hover{
+    cursor: pointer;
+}
+div.gridContainer1 div.recipe div.main div.text div.mainText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 3.47vw;
+    overflow: auto;
+}
+div.gridContainer1 div.recipe div.main div.text div.mainText div.directions{
+    margin: 20px 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+div.gridContainer1 div.recipe div.main div.text div.mainText div.ingredients,
+div.gridContainer1 div.recipe div.main div.text div.mainText div.instruction{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
 }
