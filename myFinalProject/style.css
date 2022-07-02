@@ -31,7 +31,7 @@ div.gridContainer1 div.topMenu div.menu a{
     font-weight: bold;
     text-transform: uppercase;
     color: #2a1f1f;
-    font-size: 20px;
+    font-size: 17px;
 }
 div.gridContainer1 div.topMenu div.menu{
     display: flex;
@@ -191,7 +191,7 @@ div.gridContainer1 div.recipe div.main div.text div.header{
 }
 div.gridContainer1 div.recipe div.main div.text div.header div.text{
     font-family: 'Playfair Display', serif;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: bold;
     color: #055555;
 }
@@ -222,7 +222,6 @@ div.gridContainer1 div.recipe div.main div.text div.mainText{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right: 3.47vw;
     overflow: auto;
 }
 div.gridContainer1 div.recipe div.main div.text div.mainText div.directions{
@@ -236,4 +235,113 @@ div.gridContainer1 div.recipe div.main div.text div.mainText div.instruction{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     font-weight: bold;
+}
+
+/* Error and Author */
+
+    /* Error */
+
+div.errorAndAuthor{
+    height: 520px;
+    width: 77.85vw;
+    background: #8b3a3a;
+    padding-top: 140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+div.errorAndAuthor div.error{
+    width: 36.11vw;
+    background: white url(./error/background.png) no-repeat center;
+}
+div.errorAndAuthor div.error div.header{
+    border-bottom: #dddddd 2px solid;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2.43vw;
+    margin-right: 2.92vw;
+    padding-top: 19px;
+    padding-bottom: 9px;
+}
+div.errorAndAuthor div.error div.container{
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+div.errorAndAuthor div.error div.container div.sorry{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 107px;
+}
+div.errorAndAuthor div.error div.container div.text{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #a9a9a9;
+}
+div.errorAndAuthor div.error div.container button{
+    margin-top: 145px;
+    font-family: 'Josefin Sans', sans-serif;
+    background: white;
+    border: 1px solid #c2c2c2;
+    width: 110px;
+    height: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+    /* Author */
+
+div.errorAndAuthor div.author{
+    width: 36.11vw;
+    background: white;
+}
+div.errorAndAuthor div.author div.header{
+    border-bottom: #dddddd 2px solid;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2.43vw;
+    margin-right: 2.92vw;
+    padding-top: 19px;
+    padding-bottom: 9px;
+}
+div.errorAndAuthor div.author div.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2.08vw 0 3.13vw;
+    height: 469px;
+}
+div.errorAndAuthor div.author div.container div.photo{
+    margin-top: 25px;
+    height: 129px;
+    width: 129px;
+    background: url(./author/karen.png) no-repeat;
+}
+div.errorAndAuthor div.author div.container div.main{
+    width: 20.49vw;
+    height: 380px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+div.errorAndAuthor div.author div.container div.main div.name{
+    font-size: 22px;
+}
+div.errorAndAuthor div.author div.container div.main div.about{
+    font-style: italic;
+    font-size: 19px;
+}
+div.errorAndAuthor div.author div.container div.main div.text{
+    padding-bottom: 115px;
+    margin-right: 1vw;
+    background: url(./author/signature.png) no-repeat right bottom;
 }
