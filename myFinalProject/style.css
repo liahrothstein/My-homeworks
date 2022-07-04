@@ -103,6 +103,9 @@ div.gridContainer1 div.heroPage div.container div.getItRecipeButton button{
     text-transform: uppercase;
     margin-top: 15px;
 }
+div.gridContainer1 div.heroPage div.container div.getItRecipeButton button:active{
+    background-color: #bcdff5ee;
+}
 div.gridContainer1 div.heroPage div.getItRecipeButton button:hover{
     cursor: pointer;
 }
@@ -201,7 +204,7 @@ div.gridContainer1 div.recipe div.main div.text div.header div.others{
     margin: 25px 0;
 }
 div.gridContainer1 div.recipe div.main div.text div.header div.others div.more{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 20px;
     color: #555555;
@@ -214,6 +217,9 @@ div.gridContainer1 div.recipe div.main div.text div.header div.others button{
     height: 28px;
     font-weight: bold;
     text-transform: uppercase;
+}
+div.gridContainer1 div.recipe div.main div.text div.header div.others button:active{
+    background-color: #bcdff5ee;    
 }
 div.gridContainer1 div.recipe div.main div.text div.header div.others button:hover{
     cursor: pointer;
@@ -253,6 +259,7 @@ div.errorAndAuthor{
 div.errorAndAuthor div.error{
     width: 36.11vw;
     background: white url(./error/background.png) no-repeat center;
+    background-size: cover;
 }
 div.errorAndAuthor div.error div.header{
     border-bottom: #dddddd 2px solid;
@@ -293,6 +300,9 @@ div.errorAndAuthor div.error div.container button{
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
+}
+div.errorAndAuthor div.error div.container button:active{
+    background-color: #bcdff5ee;
 }
 
     /* Author */
@@ -344,4 +354,175 @@ div.errorAndAuthor div.author div.container div.main div.text{
     padding-bottom: 115px;
     margin-right: 1vw;
     background: url(./author/signature.png) no-repeat right bottom;
+}
+
+/* Side Bar */
+
+    /* Recipe Blog and Target */
+
+div.sideBar{
+    padding-top: 78px;
+    height: 1049px;
+    width: 77.85vw;
+    background: #8b3a3a;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+div.sideBar div.flexContainer1,
+div.sideBar div.flexContainer2,
+div.sideBar div.flexContainer3{
+    display: flex;
+    flex-direction: column;
+    width: 20.14vw;
+}
+div.sideBar div.flexContainer1 div.recipeBlog{
+    height: 349px;
+    background: white;
+}
+div.sideBar div.flexContainer1 div.recipeBlog div.header{
+    border-bottom: #dddddd 2px solid;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 1.5vw;
+    padding-top: 19px;
+    padding-bottom: 9px;
+    color: #055555;
+    text-align: center;
+}
+div.sideBar div.flexContainer1 div.recipeBlog div.blogerInfo{
+    margin: 13px 1.5vw;
+    display: flex;
+    justify-content: space-between;
+}
+div.sideBar div.flexContainer1 div.recipeBlog div.blogerInfo div.text div.recipeBy{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+}
+div.sideBar div.flexContainer1 div.recipeBlog div.blogerInfo div.text div.name{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+div.sideBar div.flexContainer1 div.recipeBlog div.blogerInfo div.text div.info{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+div.sideBar div.flexContainer1 div.recipeBlog div.blogerInfo div.photo{
+    width: 58px;
+    height: 58px;
+    background: url(./sideBar/recipeBlog/bloger.png);
+}
+div.sideBar div.flexContainer1 div.recipeBlog div.food{
+    width: 100%;
+    height: 204px;
+    background: url(./sideBar/recipeBlog/photo.png) no-repeat center;
+    background-size: cover;
+}
+div.sideBar div.flexContainer1 div.target{
+    margin-top: 48px;
+    height: 472px;
+    background: white;
+}
+div.sideBar div.flexContainer1 div.target div.header:not(
+    div.sideBar div.flexContainer1 div.target div.targets div.housewives div.main div.header,
+    div.sideBar div.flexContainer1 div.target div.targets div.newlyweds div.main div.header,
+    div.sideBar div.flexContainer1 div.target div.targets div.businessLady div.main div.header
+){
+    border-bottom: #dddddd 2px solid;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0 1.5vw;
+    padding-top: 19px;
+    padding-bottom: 9px;
+}
+div.sideBar div.flexContainer1 div.target div.presentation{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 2vw;
+    padding-top: 14px;
+    padding-bottom: 9px;
+    color: #055555;
+}
+div.sideBar div.flexContainer1 div.target div.targets{
+    height: 285px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div.sideBar div.flexContainer1 div.target div.targets div.housewives,
+div.sideBar div.flexContainer1 div.target div.targets div.newlyweds,
+div.sideBar div.flexContainer1 div.target div.targets div.businessLady{
+    display: flex;
+    justify-content: space-between;
+}
+div.sideBar div.flexContainer1 div.target div.targets div.housewives div.image{
+    width: 58px;
+    height: 59px;
+    background: url(./sideBar/target/housewives.png) no-repeat;
+    margin-left: 1.67vw;
+}
+div.sideBar div.flexContainer1 div.target div.targets div.newlyweds div.image{
+    width: 58px;
+    height: 59px;
+    background: url(./sideBar/target/newlyweds.png) no-repeat;
+    margin-left: 1.67vw;
+}
+div.sideBar div.flexContainer1 div.target div.targets div.businessLady div.image{
+    width: 58px;
+    height: 59px;
+    background: url(./sideBar/target/businessLady.png) no-repeat;
+    margin-left: 1.67vw;
+}
+div.sideBar div.flexContainer1 div.target div.targets div.housewives div.main,
+div.sideBar div.flexContainer1 div.target div.targets div.newlyweds div.main,
+div.sideBar div.flexContainer1 div.target div.targets div.businessLady div.main{
+    width: 9.72vw;
+    margin-right: 3.13vw;
+    color: #555555;
+    font-family: 'Josefin Sans', sans-serif;
+}
+div.sideBar div.flexContainer1 div.target div.targets div.housewives div.main div.header,
+div.sideBar div.flexContainer1 div.target div.targets div.newlyweds div.main div.header,
+div.sideBar div.flexContainer1 div.target div.targets div.businessLady div.main div.header{
+    font-size: 19px;
+}
+div.sideBar div.flexContainer1 div.target div.targets div.housewives div.main div.text,
+div.sideBar div.flexContainer1 div.target div.targets div.newlyweds div.main div.text,
+div.sideBar div.flexContainer1 div.target div.targets div.businessLady div.main div.text{
+    font-style: italic;
+}
+
+    /* Recipe Filter, Tags and Calender */
+
+div.sideBar div.flexContainer2 div.recipeFilter{
+    background: white;
+    height: 427px;
+}
+div.sideBar div.flexContainer2 div.tags{
+    margin-top: 50px;
+    background: white;
+    height: 160px;
+}
+div.sideBar div.flexContainer2 div.calendar{
+    margin-top: 46px;
+    background: white;
+    height: 368px;
+}
+
+    /* Popular Now and Time Line */
+
+div.sideBar div.flexContainer3 div.popularNow{
+    background: white;
+    height: 349px;
+}
+div.sideBar div.flexContainer3 div.timeLine{
+    margin-top: 47px;
+    background: white;
+    height: 431px;
 }
