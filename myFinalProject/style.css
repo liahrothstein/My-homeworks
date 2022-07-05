@@ -69,7 +69,8 @@ div.gridContainer1 div.topMenu div.menu form.search input[type=text]{
 /* hero page */
 
 div.gridContainer1 div.heroPage{
-    background: #f9f9f9 url(./logos/heroPageLogo.png) no-repeat 6.6vw 16.28%;
+    background: #f9f9f9 url(./heroPage/background.png) no-repeat;
+    background-size: cover;
     display: flex;
 }
 div.gridContainer1 div.heroPage div.container{
@@ -642,14 +643,58 @@ div.sideBar div.flexContainer2 div.calendar{
     margin-top: 46px;
     background: white;
     height: 368px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+div.sideBar div.flexContainer2 div.calendar div.header{
+    border-bottom: #dddddd 2px solid;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0 1.5vw;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+div.sideBar div.flexContainer2 div.calendar div.monthsAndArrows{
+    margin: 25px 0;
+    display: flex;
+    justify-content: space-around;
+}
+div.sideBar div.flexContainer2 div.calendar div.monthsAndArrows div.arrowLeft,
+div.sideBar div.flexContainer2 div.calendar div.monthsAndArrows div.arrowRight{
+    font-weight: normal;
+    cursor: pointer;
+}
+div.sideBar div.flexContainer2 div.calendar div.numbersAndDays{
+    margin: 0 2.08vw;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1.2vw;
+    row-gap: 24px;
+    font-style: italic;
+}
+div.sideBar div.flexContainer2 div.calendar div.numbersAndDays div.noJune{
+    color: #9e9e9e;
+}
+div.sideBar div.flexContainer2 div.calendar div.numbersAndDays div.days{
+    border-bottom: #7f7f7f solid 2px;
 }
 
+
+
     /* Popular Now and Time Line */
+
+        /* Popular Now */
 
 div.sideBar div.flexContainer3 div.popularNow{
     background: white;
     height: 349px;
 }
+
+        /* Time Line */
+
 div.sideBar div.flexContainer3 div.timeLine{
     margin-top: 47px;
     background: white;
