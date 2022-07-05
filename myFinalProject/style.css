@@ -754,3 +754,49 @@ div.sideBar div.flexContainer3 div.timeLine{
     background: white;
     height: 431px;
 }
+div.sideBar div.flexContainer3 div.timeLine div.header{
+    border-bottom: #dddddd 2px solid;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0 1.5vw;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+div.sideBar div.flexContainer3 div.timeLine div.main div.mainHeader{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 2vw;
+    padding-top: 14px;
+    padding-bottom: 9px;
+    color: #055555;
+}
+div.sideBar div.flexContainer3 div.timeLine div.main div.lines{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2.5vw 0 3.13vw;
+    padding-bottom: 19px;
+    border-bottom: #dddddd 2px solid;
+}
+div.sideBar div.flexContainer3 div.timeLine div.main div.lines div.line1,
+div.sideBar div.flexContainer3 div.timeLine div.main div.lines div.line2,
+div.sideBar div.flexContainer3 div.timeLine div.main div.lines div.line3{
+    width: 47px;
+    height: 186px;
+}
+div.sideBar div.flexContainer3 div.timeLine div.main div.lines div.line1{
+    background: url(./sideBar/timeLine/easy.png) no-repeat bottom;
+}
+div.sideBar div.flexContainer3 div.timeLine div.main div.lines div.line2{
+    background: url(./sideBar/timeLine/middle.png) no-repeat bottom;
+}
+div.sideBar div.flexContainer3 div.timeLine div.main div.lines div.line3{
+    background: url(./sideBar/timeLine/long.png) no-repeat bottom;
+}
+div.sideBar div.flexContainer3 div.timeLine div.main div.text{
+    margin: 19px 2.5vw 0 3.13vw;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #6a6a6a;
+}
