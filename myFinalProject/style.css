@@ -386,11 +386,11 @@ div.sideBar div.flexContainer1 div.recipeBlog{
 div.sideBar div.flexContainer1 div.recipeBlog div.header{
     border-bottom: #dddddd 2px solid;
     font-family: 'Playfair Display', serif;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     margin: 0 1.5vw;
     padding-top: 19px;
-    padding-bottom: 9px;
+    padding-bottom: 7px;
     color: #055555;
     text-align: center;
 }
@@ -410,7 +410,9 @@ div.sideBar div.flexContainer1 div.recipeBlog div.blogerInfo div.text div.name{
 }
 div.sideBar div.flexContainer1 div.recipeBlog div.blogerInfo div.text div.info{
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #555555;
 }
 div.sideBar div.flexContainer1 div.recipeBlog div.blogerInfo div.photo{
     width: 58px;
@@ -682,15 +684,67 @@ div.sideBar div.flexContainer2 div.calendar div.numbersAndDays div.days{
     border-bottom: #7f7f7f solid 2px;
 }
 
-
-
     /* Popular Now and Time Line */
 
         /* Popular Now */
 
 div.sideBar div.flexContainer3 div.popularNow{
     background: white;
+    background: url(./sideBar/popularNow/background.png) no-repeat;
+    background-size: cover;
     height: 349px;
+}
+div.sideBar div.flexContainer3 div.popularNow div.header{
+    border-bottom: #ffffff 2px solid;
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    font-weight: 900;
+    margin: 0 1.5vw;
+    padding-top: 19px;
+    padding-bottom: 7px;
+    color: #921026;
+}
+div.sideBar div.flexContainer3 div.popularNow div.main{
+    margin: 0 1.5vw;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div.sideBar div.flexContainer3 div.popularNow div.main div.mainHeader{
+    margin-top: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+div.sideBar div.flexContainer3 div.popularNow div.main div.text{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+div.sideBar div.flexContainer3 div.popularNow div.main div.btnAndMore{
+    display: flex;
+    justify-content: space-between;
+}
+div.sideBar div.flexContainer3 div.popularNow div.main div.btnAndMore button{
+    font-family: 'Josefin Sans', sans-serif;
+    background: #00000000;
+    border: 1px solid #c2c2c2;
+    width: 110px;
+    height: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0;
+}
+div.sideBar div.flexContainer3 div.popularNow div.main div.btnAndMore button:active{
+    background-color: #bcdff5ee;
+}
+div.sideBar div.flexContainer3 div.popularNow div.main div.btnAndMore div.more{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #555555;
 }
 
         /* Time Line */
