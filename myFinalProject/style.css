@@ -360,6 +360,8 @@ div.errorAndAuthor div.author div.container div.main div.text{
 
     /* Recipe Blog and Target */
 
+        /* Recipe Blog */
+
 div.sideBar{
     padding-top: 78px;
     height: 1049px;
@@ -416,10 +418,13 @@ div.sideBar div.flexContainer1 div.recipeBlog div.blogerInfo div.photo{
 }
 div.sideBar div.flexContainer1 div.recipeBlog div.food{
     width: 100%;
-    height: 204px;
+    height: 205px;
     background: url(./sideBar/recipeBlog/photo.png) no-repeat center;
     background-size: cover;
 }
+
+        /* Target */
+
 div.sideBar div.flexContainer1 div.target{
     margin-top: 48px;
     height: 472px;
@@ -500,15 +505,139 @@ div.sideBar div.flexContainer1 div.target div.targets div.businessLady div.main 
 
     /* Recipe Filter, Tags and Calender */
 
+        /* Recipe Filter */
+
 div.sideBar div.flexContainer2 div.recipeFilter{
     background: white;
     height: 427px;
 }
+div.sideBar div.flexContainer2 div.recipeFilter div.header{
+    border-bottom: #dddddd 2px solid;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0 1.5vw;
+    padding-top: 19px;
+    padding-bottom: 9px;
+}
+div.sideBar div.flexContainer2 div.recipeFilter div.filter form{
+    display: flex;
+    justify-content: space-between;
+    margin: 14px 3.47vw;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+}
+div.sideBar div.flexContainer2 div.recipeFilter div.filter form input{
+    display: none;
+}
+div.sideBar div.flexContainer2 div.recipeFilter div.filter form:not(:checked) > label{
+    cursor: pointer;
+}
+div.sideBar div.flexContainer2 div.recipeFilter div.filter form > input:checked + label{
+    font-weight: bold;
+}
+div.sideBar div.flexContainer2 div.recipeFilter div.recipes{
+    height: 245px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div.sideBar div.flexContainer2 div.recipeFilter div.recipes div.recipe1,
+div.sideBar div.flexContainer2 div.recipeFilter div.recipes div.recipe2,
+div.sideBar div.flexContainer2 div.recipeFilter div.recipes div.recipe3{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2.36vw 0 1.32vw;
+    font-family: 'Josefin Sans', sans-serif;
+}
+div.sideBar div.flexContainer2 div.recipeFilter div.recipes div.recipe1 div.image{
+    width: 50px;
+    height: 47px;
+    background: url(./sideBar/recipeFilter/recipe1.png) no-repeat;
+}
+div.sideBar div.flexContainer2 div.recipeFilter div.recipes div.recipe2 div.image{
+    width: 50px;
+    height: 47px;
+    background: url(./sideBar/recipeFilter/recipe2.png) no-repeat;
+}
+div.sideBar div.flexContainer2 div.recipeFilter div.recipes div.recipe3 div.image{
+    width: 50px;
+    height: 47px;
+    background: url(./sideBar/recipeFilter/recipe3.png) no-repeat;
+}
+div.sideBar div.flexContainer2 div.recipeFilter div.recipes div.recipe1 div.main div.by,
+div.sideBar div.flexContainer2 div.recipeFilter div.recipes div.recipe2 div.main div.by,
+div.sideBar div.flexContainer2 div.recipeFilter div.recipes div.recipe3 div.main div.by{
+    display: flex;
+    justify-content: space-between;
+}
+div.sideBar div.flexContainer2 div.recipeFilter div.recipes div.recipe1 div.main div.by div.name,
+div.sideBar div.flexContainer2 div.recipeFilter div.recipes div.recipe2 div.main div.by div.name,
+div.sideBar div.flexContainer2 div.recipeFilter div.recipes div.recipe3 div.main div.by div.name{
+    font-weight: bold;
+}
+div.sideBar div.flexContainer2 div.recipeFilter div.recipes div.recipe1 div.main div.text,
+div.sideBar div.flexContainer2 div.recipeFilter div.recipes div.recipe2 div.main div.text,
+div.sideBar div.flexContainer2 div.recipeFilter div.recipes div.recipe3 div.main div.text{
+    margin-top: 8px;
+    font-weight: bold;
+}
+div.sideBar div.flexContainer2 div.recipeFilter div.button button{
+    margin-left: 11.39vw;
+    margin-top: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    background: white;
+    border: 1px solid #c2c2c2;
+    width: 110px;
+    height: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+div.sideBar div.flexContainer2 div.recipeFilter div.button button:active{
+    background-color: #bcdff5ee;
+}
+
+        /* Tags */
+
 div.sideBar div.flexContainer2 div.tags{
     margin-top: 50px;
     background: white;
     height: 160px;
 }
+div.sideBar div.flexContainer2 div.tags div.header{
+    border-bottom: #dddddd 2px solid;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0 1.5vw;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+div.sideBar div.flexContainer2 div.tags div.container{
+    padding-top: 12px;
+    margin: 0 1.5vw;
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+
+}
+div.sideBar div.flexContainer2 div.tags div.container div.row1,
+div.sideBar div.flexContainer2 div.tags div.container div.row2,
+div.sideBar div.flexContainer2 div.tags div.container div.row3{
+    display: flex;
+    justify-content: space-between;
+}
+
+        /* Calendar */
+
 div.sideBar div.flexContainer2 div.calendar{
     margin-top: 46px;
     background: white;
