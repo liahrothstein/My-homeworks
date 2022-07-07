@@ -800,3 +800,117 @@ div.sideBar div.flexContainer3 div.timeLine div.main div.text{
     font-family: 'Josefin Sans', sans-serif;
     color: #6a6a6a;
 }
+
+/* Login and Sign In */
+
+    /* Login */
+
+div.loginAndSignIn{
+    height: 535px;
+    padding-top: 101px;
+    width: 77.85vw;
+    background: #8b3a3a;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+div.loginAndSignIn div.login{
+    height: 407px;
+    width: 22.78vw;
+    background: white;
+    margin-left: 12.64vw;
+}
+div.loginAndSignIn div.login div.header{
+    border-bottom: #dddddd 2px solid;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0 1.5vw;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+div.loginAndSignIn div.login div.loginFor{
+    margin: 25px 1.5vw;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+div.loginAndSignIn div.login form{
+    margin: 25px 1.5vw;
+    height: 132px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div.loginAndSignIn div.login form input[type="text"],
+div.loginAndSignIn div.login form input[type="password"]{
+    height: 40px;
+    padding-left: 1vw;
+    border: #c2c2c2 solid 1px;
+    outline: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+div.loginAndSignIn div.login form input[type="text"]:focus,
+div.loginAndSignIn div.login form input[type="password"]:focus{
+    box-shadow: inset 2px 2px 6px 1px #d9d9d9;
+}
+div.loginAndSignIn div.login form div.formContainer{
+    display: flex;
+    justify-content: space-between;
+}
+div.loginAndSignIn div.login form div.formContainer div.checkbox{
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 13px;
+}
+div.loginAndSignIn div.login form div.formContainer a{
+    padding-top: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+}
+div.loginAndSignIn div.login div.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 155px;
+}
+div.loginAndSignIn div.login div.buttons button{
+    font-family: 'Josefin Sans', sans-serif;
+    background: white;
+    border: 1px solid #c2c2c2;
+    width: 110px;
+    height: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+div.loginAndSignIn div.login div.buttons button:active{
+    background-color: #bcdff5ee;
+}
+div.loginAndSignIn div.login div.buttons a{
+    padding-bottom: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+    /* Sign In */
+
+div.loginAndSignIn div.signIn{
+    height: 535px;
+    width: 22.78vw;
+    background: white;
+    margin-right: 12.64vw;
+}
