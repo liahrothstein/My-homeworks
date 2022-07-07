@@ -57,13 +57,17 @@ div.gridContainer1 div.topMenu div.menu form.search input[type=submit]{
 }
 div.gridContainer1 div.topMenu div.menu form.search input[type=text]{
     height: 26px;
-    width: 160px;
+    width: 11.11vw;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 15px;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
     border: #c2c2c2 solid 1px;
+    outline: none;
+}
+div.gridContainer1 div.topMenu div.menu form.search input[type=text]:focus{
+    box-shadow: inset 2px 2px 6px 1px #d9d9d9;
 }
 
 /* hero page */
@@ -979,10 +983,98 @@ div.loginAndSignIn div.signIn div.buttonAndLinks div.terms{
 }
 div.loginAndSignIn div.signIn div.buttonAndLinks div.terms a{
     text-decoration: underline;
+    color: blue;
 }
 div.loginAndSignIn div.signIn div.buttonAndLinks a{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
     font-size: 14px;
     text-decoration: none;
+    color: black;
+}
+
+/* Comment Post */
+
+div.postComment{
+    height: 187px;
+    padding-top: 125px;
+    width: 77.85vw;
+    background: #8b3a3a;
+    margin: 0 auto;
+}
+div.postComment div.container{
+    margin: 0 auto;
+    height: 100%;
+    width: 58.13vw;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div.postComment div.container div.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2.78vw;
+    margin-top: 10px;
+}
+div.postComment div.container div.header div.text{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+div.postComment div.container div.header div.socialMedia{
+    width: 10.42vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
+div.postComment div.container div.postContainer{
+    height: 90px;
+    margin: 0 2.78vw;
+    margin-bottom: 33px;
+    background: #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.postComment div.container div.postContainer div.photo{
+    margin-left: 1.39vw;
+    height: 58px;
+    width: 58px;
+    background: url(./commentPost/bloger.png);
+}
+div.postComment div.container div.postContainer form{
+    margin-right: 1.74vw;
+}
+div.postComment div.container div.postContainer form input[type="text"]{
+    border: 1px solid #c2c2c2;
+    box-sizing: border-box;
+    width: 34.44vw;
+    height: 40px;
+    outline: none;
+    padding-left: 1vw;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+div.postComment div.container div.postContainer form input[type="text"]:focus{
+    box-shadow: inset 2px 2px 6px 1px #d9d9d9;
+}
+div.postComment div.container div.postContainer form input[type="submit"]{
+    border: 1px solid #c2c2c2;
+    width: 5.97vw;
+    height: 40px;
+    color: white;
+    background: #383737;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
 }
