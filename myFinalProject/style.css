@@ -1288,6 +1288,7 @@ div.comments div.container div.post2 div.comment{
 div.navigation{
     height: 93px;
     padding-top: 44px;
+    padding-bottom: 150px;
     width: 77.85vw;
     background: #8b3a3a;
     margin: 0 auto;
@@ -1314,4 +1315,40 @@ div.navigation div.numbers div.two{
 div.navigation div.numbers div.arrow,
 div.navigation div.numbers div.number{
     cursor: pointer;
+}
+
+/* Footer */
+
+div.footer{
+    height: 180px;
+    width: 77.85vw;
+    margin: 0 auto;
+    background: #1c0c0c;
+    display: flex;
+    align-items: center;
+}
+div.footer div.container{
+    padding: 0 3.68vw 0 6.04vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #fefefe;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+div.footer div.container div.footerLogo{
+    width: 87px;
+    height: 36px;
+    background: url(./logos/footerLogo.png);
+}
+div.footer div.container div.links{
+    width: 32vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+div.footer div.container div.copyright{
+    padding-top: 10px;
 }
