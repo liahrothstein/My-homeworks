@@ -91,6 +91,11 @@ div.gridContainer1 div.heroPage div.container div.recipeName{
     font-weight: bold;
     margin-top: 178px;
 }
+@media screen and (min-width: 1600px) {
+    div.gridContainer1 div.heroPage div.container div.recipeName{
+        margin-top: 218px;
+    }
+}
 div.gridContainer1 div.heroPage div.container div.recipeDescription{
     font-size: 18px;
     font-family: 'Josefin Sans', sans-serif;
@@ -1077,4 +1082,203 @@ div.postComment div.container div.postContainer form input[type="submit"]{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     cursor: pointer;
+}
+
+/* Comments */
+
+div.comments{
+    height: 761px;
+    padding-top: 47px;
+    width: 77.85vw;
+    background: #8b3a3a;
+    margin: 0 auto;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+div.comments div.container{
+    margin: 0 auto;
+    height: 100%;
+    width: 58.13vw;
+    background: white;
+}
+div.comments div.container div.header{
+    border-bottom: #dddddd 2px solid;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0 3vw;
+    padding-top: 19px;
+    padding-bottom: 9px;
+}
+div.comments div.container div.post1{
+    margin: 0 3vw;
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: 5.42vw 5.42vw 16.88vw 18.19vw 1fr;
+    grid-template-rows: repeat(3, 19.3px) 220px 44px 150px;
+    border-bottom: #dddddd 2px solid;
+}
+div.comments div.container div.post1 div.photo{
+    height: 58px;
+    width: 58px;
+    background: url(./comments/bloger.png);
+    grid-row: 1/4;
+    grid-column: 1/2;
+}
+div.comments div.container div.post1 div.postBy{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    font-weight: normal;
+    font-size: 17px;
+}
+div.comments div.container div.post1 div.name{
+    grid-row: 2/3;
+    grid-column: 2/4;
+    font-size: 18px;
+}
+div.comments div.container div.post1 div.name a{
+    color: #629494;
+    font-size: 15px;
+}
+div.comments div.container div.post1 div.date{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    color: #629494;
+    font-size: 15px;
+}
+div.comments div.container div.post1 div.more{
+    grid-row: 2/3;
+    grid-column: 5/6;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+div.comments div.container div.post1 div.more div.share::after{
+    content: url(./comments/share.png);
+}
+div.comments div.container div.post1 div.food{
+    grid-row: 4/5;
+    grid-column: 2/4;
+    background: url(./comments/food.png) no-repeat bottom left;
+}
+div.comments div.container div.post1 div.thanks{
+    padding-top: 16px;
+    grid-row: 5/6;
+    grid-column: 2/4;
+    font-weight: normal;
+    font-size: 17px;
+}
+div.comments div.container div.post1 div.answer{
+    padding-top: 24px;
+    grid-row: 6/7;
+    grid-column: 2/6;
+    display: grid;
+    grid-template-columns: 5.42vw 5.42vw 16.88vw 1fr 6.21vw;
+    grid-template-rows: repeat(3, 19.3px) 45px 37px;
+    border-top: #dddddd 2px solid;
+}
+div.comments div.container div.post1 div.answer div.answerPhoto{
+    height: 58px;
+    width: 58px;
+    background: url(./comments/bloger.png);
+    grid-row: 1/4;
+    grid-column: 1/2;
+}
+div.comments div.container div.post1 div.answer div.answerPostBy{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    font-weight: normal;
+    font-size: 17px;
+}
+div.comments div.container div.post1 div.answer div.answerName{
+    grid-row: 2/3;
+    grid-column: 2/4;
+    font-size: 18px;
+}
+div.comments div.container div.post1 div.answer div.answerName a{
+    color: #629494;
+    font-size: 15px;
+}
+div.comments div.container div.post1 div.answer div.answerDate{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    color: #629494;
+    font-size: 15px;
+}
+div.comments div.container div.post1 div.answer div.answerMore{
+    grid-row: 2/3;
+    grid-column: 5/6;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+div.comments div.container div.post1 div.answer div.answerMore div.share::after{
+    content: url(./comments/share.png);
+}
+div.comments div.container div.post1 div.answer div.comment{
+    grid-row: 4/5;
+    grid-column: 2/5;
+    padding-top: 12px;
+}
+div.comments div.container div.post1 div.answer div.moreComments{
+    grid-row: 5/6;
+    grid-column: 3/5;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-weight: normal;
+    cursor: pointer;
+}
+div.comments div.container div.post2{
+    margin: 0 3vw;
+    display: grid;
+    grid-template-columns: 5.42vw 5.42vw 16.88vw 1fr 6.21vw;
+    grid-template-rows: repeat(3, 19.3px) 28px;
+    padding: 24px 0;
+    border-bottom: #dddddd 2px solid;
+}
+div.comments div.container div.post2 div.photo{
+    height: 58px;
+    width: 58px;
+    background: url(./comments/bloger.png);
+    grid-row: 1/4;
+    grid-column: 1/2;
+}
+div.comments div.container div.post2 div.postBy{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    font-weight: normal;
+    font-size: 17px;
+}
+div.comments div.container div.post2 div.name{
+    grid-row: 2/3;
+    grid-column: 2/4;
+    font-size: 18px;
+}
+div.comments div.container div.post2 div.name a{
+    color: #629494;
+    font-size: 15px;
+}
+div.comments div.container div.post2 div.date{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    color: #629494;
+    font-size: 15px;
+}
+div.comments div.container div.post2 div.more{
+    grid-row: 2/3;
+    grid-column: 5/6;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+div.comments div.container div.post2 div.more div.share::after{
+    content: url(./comments/share.png);
+}
+div.comments div.container div.post2 div.comment{
+    grid-row: 4/5;
+    grid-column: 2/4;
+    padding-top: 15px;
+    font-weight: normal;
+    font-size: 17px;
 }
