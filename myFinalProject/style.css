@@ -1282,3 +1282,36 @@ div.comments div.container div.post2 div.comment{
     font-weight: normal;
     font-size: 17px;
 }
+
+/* Navigation */
+
+div.navigation{
+    height: 93px;
+    padding-top: 44px;
+    width: 77.85vw;
+    background: #8b3a3a;
+    margin: 0 auto;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+div.navigation div.container{
+    height: 100%;
+    width: 58.13vw;
+    margin: 0 auto;
+}
+div.navigation div.numbers{
+    background: white;
+    height: 100%;
+    padding: 0 18.75vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.navigation div.numbers div.two{
+    color: #629494;
+}
+div.navigation div.numbers div.arrow,
+div.navigation div.numbers div.number{
+    cursor: pointer;
+}
