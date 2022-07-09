@@ -66,6 +66,11 @@ div.gridContainer1 div.topMenu div.menu form.search input[type=text]{
     border: #c2c2c2 solid 1px;
     outline: none;
 }
+@media (max-width: 1230px){
+    div.gridContainer1 div.topMenu div.menu form.search input[type=text]{
+        font-size: 11px;
+    }
+}
 div.gridContainer1 div.topMenu div.menu form.search input[type=text]:focus{
     box-shadow: inset 2px 2px 6px 1px #d9d9d9;
 }
@@ -179,6 +184,11 @@ div.gridContainer1 div.recipes div.recipe3 div.image{
     width: 313px;
     height: 208px;
 }
+@media (max-width: 1210px) and (min-width: 769px){
+    div.gridContainer1 div.recipes div.recipe3{
+        display: none;
+    }
+}
 
 /* recipe */
 
@@ -233,6 +243,30 @@ div.gridContainer1 div.recipe div.main div.text div.header div.others button:act
 }
 div.gridContainer1 div.recipe div.main div.text div.header div.others button:hover{
     cursor: pointer;
+}
+@media (max-width: 1380px){
+    div.gridContainer1 div.recipe div.main div.text div.header div.others{
+        margin: 12px 0;
+    }
+    div.gridContainer1 div.recipe div.main div.text div.header div.text{
+        font-size: 30px;
+    }
+}
+@media (max-width: 1024px){
+
+    div.gridContainer1 div.recipe div.main div.text div.mainText div.ingredients,
+    div.gridContainer1 div.recipe div.main div.text div.mainText div.instruction{
+        font-size: 14px;
+    }
+    div.gridContainer1 div.recipe div.main div.text div.mainText div.directions{
+        margin: 5px 0;
+    }
+    div.gridContainer1 div.recipe div.main div.text div.header div.text{
+        font-size: 26px;
+    }
+    div.gridContainer1 div.recipe div.main div.text:not(div.gridContainer1 div.recipe div.main div.text div.header div.text){
+        margin: 0;
+    }
 }
 div.gridContainer1 div.recipe div.main div.text div.mainText{
     display: flex;
@@ -364,6 +398,12 @@ div.errorAndAuthor div.author div.container div.main div.text{
     padding-bottom: 115px;
     margin-right: 1vw;
     background: url(./author/signature.png) no-repeat right bottom;
+}
+@media (max-width: 1100px){
+    div.errorAndAuthor div.author div.container div.main div.text{
+        font-size: 14px;
+        padding-bottom: 62px;
+    }
 }
 
 /* Side Bar */
@@ -607,6 +647,21 @@ div.sideBar div.flexContainer2 div.recipeFilter div.button button{
     text-transform: uppercase;
     cursor: pointer;
 }
+@media (max-width: 1300px){
+    div.sideBar div.flexContainer2 div.recipeFilter div.button button{
+        margin-left: 8.39vw;
+    }
+    div.sideBar div.flexContainer2 div.recipeFilter div.recipes div.recipe1 div.main div.text,
+    div.sideBar div.flexContainer2 div.recipeFilter div.recipes div.recipe2 div.main div.text,
+    div.sideBar div.flexContainer2 div.recipeFilter div.recipes div.recipe3 div.main div.text{
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    }
+    div.sideBar div.flexContainer2 div.recipeFilter div.filter form{
+        font-size: 14px;
+    }
+}
 div.sideBar div.flexContainer2 div.recipeFilter div.button button:active{
     background-color: #bcdff5ee;
 }
@@ -639,7 +694,11 @@ div.sideBar div.flexContainer2 div.tags div.container{
     font-size: 13px;
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
-
+}
+@media (max-width: 1256px){
+    div.sideBar div.flexContainer2 div.tags div.container{
+        font-size: 10px;
+    }
 }
 div.sideBar div.flexContainer2 div.tags div.container div.row1,
 div.sideBar div.flexContainer2 div.tags div.container div.row2,
@@ -685,6 +744,13 @@ div.sideBar div.flexContainer2 div.calendar div.numbersAndDays{
     gap: 1.2vw;
     row-gap: 24px;
     font-style: italic;
+}
+@media (max-width: 1360px){
+    div.sideBar div.flexContainer2 div.calendar div.numbersAndDays{
+        gap: 0;
+        font-size: 13px;
+        row-gap: 24px;
+    }
 }
 div.sideBar div.flexContainer2 div.calendar div.numbersAndDays div.noJune{
     color: #9e9e9e;
@@ -1336,6 +1402,7 @@ div.footer div.container{
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
     font-size: 14px;
+    flex-wrap: wrap;
 }
 div.footer div.container div.footerLogo{
     width: 87px;
@@ -1348,7 +1415,153 @@ div.footer div.container div.links{
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    flex-wrap: wrap;
 }
 div.footer div.container div.copyright{
     padding-top: 10px;
+}
+
+/* Mob */
+
+@media (max-width: 768px){
+    div.logo,
+    div.gridContainer1 div.topMenu div.menu a,
+    div.gridContainer1 div.heroPage div.container div.recipeName,
+    div.gridContainer1 div.heroPage div.container div.recipeDescription,
+    div.gridContainer1 div.recipe,
+    div.errorAndAuthor,
+    div.sideBar div.flexContainer1,
+    div.sideBar div.flexContainer2 div.tags,
+    div.sideBar div.flexContainer2 div.calendar,
+    div.sideBar div.flexContainer3 div.timeLine,
+    div.loginAndSignIn,
+    div.postComment,
+    div.comments,
+    div.navigation,
+    div.sideBar div.flexContainer2 div.recipeFilter div.header{
+        display: none;
+    }
+    div.gridContainer1{
+        width: 100%;
+        row-gap: 0;
+        grid-template-rows: 102px 273px 899px;
+    }
+    div.gridContainer1 div.topMenu{
+        background: #fbfcfd url(./logos/topMenuLogo.png) no-repeat 10vw 45%;
+    }
+    div.gridContainer1 div.topMenu div.menu{
+        justify-content: flex-end;
+    }
+    div.gridContainer1 div.topMenu div.menu form.search input[type=text]{
+        width: 30.11vw;
+        border: none;
+        background: transparent;
+    }
+    div.gridContainer1 div.topMenu div.menu form.search input[type=submit]{
+        left: -140px;
+        top: 10px;
+        margin: 0 auto;
+        width: 20px;
+        background: transparent;
+    }
+    div.gridContainer1 div.topMenu div.menu form.search::after{
+        content: '🍔';
+        cursor: pointer;
+        font-size: 20px;
+    }
+    div.gridContainer1 div.heroPage{
+        display: block;
+        background: url(./mob/heroPage.png) no-repeat top center;
+    }
+    div.gridContainer1 div.heroPage div.container{
+        margin-left: 0;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    div.gridContainer1 div.heroPage div.container div.getItRecipeButton{
+        width: 100%;
+    }
+    div.gridContainer1 div.heroPage div.container div.getItRecipeButton button{
+        width: 100%;
+        height: 69px;
+        border: none;
+        font-size: 18px;
+        margin-top: 0;
+    }
+    div.gridContainer1 div.recipes{
+        padding-top: 0;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background: #fbfcfd;
+        border-bottom: #dddddd 2px solid;
+    }
+    div.gridContainer1 div.recipes div.recipe1{
+        margin-bottom: 0;
+    }
+    div.gridContainer1 div.recipes div.recipe3{
+        padding-bottom: 30px;
+    }
+    div.sideBar{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 0;
+        height: 812px;
+        width: 100%;
+        background: #fbfcfd;
+    }
+    div.sideBar div.flexContainer1, 
+    div.sideBar div.flexContainer2, 
+    div.sideBar div.flexContainer3{
+        width: 100%;
+    }
+    div.sideBar div.flexContainer3 div.popularNow, 
+    div.sideBar div.flexContainer2 div.recipeFilter{
+        width: 320px;
+        margin: 0 auto;
+    }
+    div.sideBar div.flexContainer2{
+        border-bottom: #dddddd 2px solid;
+    }
+    div.sideBar div.flexContainer2 div.recipeFilter div.button button{
+        margin-left: 11.39vw;
+    }
+    div.sideBar div.flexContainer2 div.recipeFilter div.recipes div.recipe1 div.main div.text,
+    div.sideBar div.flexContainer2 div.recipeFilter div.recipes div.recipe2 div.main div.text,
+    div.sideBar div.flexContainer2 div.recipeFilter div.recipes div.recipe3 div.main div.text{
+        margin-top: 8px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    div.sideBar div.flexContainer2 div.recipeFilter div.filter form{
+        font-size: 16px;
+    }
+    div.sideBar div.flexContainer2 div.recipeFilter div.filter form{
+        margin: 30px 60px;
+    }
+    div.sideBar div.flexContainer2 div.recipeFilter div.recipes div.recipe1,
+     div.sideBar div.flexContainer2 div.recipeFilter div.recipes div.recipe2,
+     div.sideBar div.flexContainer2 div.recipeFilter div.recipes div.recipe3{
+        margin: 0 40px;
+    }
+    div.sideBar div.flexContainer3 div.popularNow div.main,
+    div.sideBar div.flexContainer3 div.popularNow div.header{
+        margin: 0 32px;
+    }
+    div.footer{
+        width: 100%;
+        height: 310px;
+        background: #323233;
+    }
+    div.footer div.container div.copyright{
+        padding-top: 55px;
+    }
+    div.footer div.container div.links{
+        height: 160px;
+    }
+    div.footer div.container{
+        padding: 0 25px;
+    }
 }
