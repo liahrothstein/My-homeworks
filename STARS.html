@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stars</title>
+        <style>
+            div.stars{
+                display: flex;
+                position: absolute;
+                top: 48%;
+                left: 40%;
+                flex-direction: row-reverse;
+            }
+            .stars > img:hover ~ img,
+            .stars > img:hover{
+                content: url('star1.png');
+            }
+        </style>
+    </head>
+    <body>
+        <div class="stars">
+            <img src="star0.png" alt="" class="star1">
+            <img src="star0.png" alt="" class="star2">
+            <img src="star0.png" alt="" class="star3">
+            <img src="star0.png" alt="" class="star4">
+            <img src="star0.png" alt="" class="star5">
+        </div>
+    </body>
+</html>
