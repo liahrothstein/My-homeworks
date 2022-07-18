@@ -1,0 +1,135 @@
+div{
+    text-align: center;
+    font-size: 2rem;
+    margin: 40px;
+    height: 36.25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: #008000;
+}
+a:hover{
+    color: #ff0000;
+}
+
+/* divs and borders */
+
+div.divs div:not(div.divs div:last-of-type){
+    border-right: #ff0000 solid 5px;
+}
+div.divs div{
+    display: inline-block;
+    margin: 0 auto;
+    padding-right: 10px;
+}
+
+/* table and borders */
+
+div.table table tr td:not(div.table table tr td:last-of-type){
+    border-right: #ff0000 solid 5px;
+    border-collapse: collapse;
+}
+div.table table tr td{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+div.table table{
+    margin: 0 auto;
+}
+
+/* spans and borders */
+
+div.spans span{
+    border-right: #ff0000 solid 5px;
+    padding-right: 10px;
+}
+div.spans a{
+    padding-left: 10px;
+}
+
+/* flexbox and borders */
+
+div.flexbox div{
+    margin: 0 auto;
+    padding-right: 16px;
+}
+div.flexbox{
+    display: flex;
+    margin-right: 28vw;
+    margin-left: 28vw;
+}
+div.flexbox div:not(div.flexbox div:last-of-type){
+    border-right: #ff0000 solid 5px;
+}
+
+/* grid and borders */
+
+div.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-right: 26vw;
+    margin-left: 26vw;
+}
+div.grid div:not(div.grid div:last-of-type){
+    border-right: #ff0000 solid 5px;
+}
+div.grid div{
+    margin: 0 auto;
+    padding-right: 30px;
+}
+
+/* background-color of spans */
+
+div.bgColor span{
+    display: inline-block;
+    background: #ff0000;
+    height: 100%;
+    width: 5px;
+}
+
+/* background-image of spans */
+
+div.bgImg span{
+    display: inline-block;
+    background: url('linksBorder.png');
+    height: 100%;
+    width: 5px;
+}
+
+/* only sticks */
+
+div.sticks strong{
+    color: #ff0000;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+/* ::after and spans */
+
+div.after span::after{
+    content: '';
+    display: inline-block;
+    background: #ff0000;
+    height: 100%;
+    width: 5px;
+}
+
+/* ::before and spans */
+
+div.before span::before{
+    content: '';
+    display: inline-block;
+    background: #ff0000;
+    height: 100%;
+    width: 5px;
+}
+
+
+/* result:
+    inline-block                borders
+    table                       background-color and image box-models
+    inline                      images
+    flexbox                     sticks
+    grid                        span::after
+                                span::before
+*/
